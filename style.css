@@ -1,0 +1,144 @@
+/* ================================
+   Base Styles
+=================================*/
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem; /* slightly bigger text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.8; /* more spacing for readability */
+    background-color: #fafafa;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.2rem; 
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1.15rem; /* slightly bigger paragraph text */
+    margin: 1rem 0;
+    max-width: 800px;
+}
+
+/* ================================
+   Navigation
+=================================*/
+nav {
+    background-color: #723ba5;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+/* ================================
+   Hero Section
+=================================*/
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 3rem;
+    background: linear-gradient(135deg, #e3f2fd, #f9f9f9);
+    gap: 3rem;
+}
+
+.hero img {
+    width: 200px; /* slightly smaller */
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.25);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+}
+
+/* ================================
+   Sections (Projects, Fun, etc.)
+=================================*/
+section, .fun-section {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 900px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+section img, .fun-section img {
+    max-width: 45%; /* smaller images for desktop */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    margin: 1rem 1rem 1rem 0; /* spacing around images */
+}
+
+@media (max-width: 768px) {
+    section img, .fun-section img {
+        max-width: 100%; /* stack on mobile */
+        margin: 1rem 0;
+    }
+}
+
+ul, ol {
+    margin: 1rem 2rem;
+}
+
+a {
+    color: #4a90e2;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+    margin-top: 2rem;
+}
